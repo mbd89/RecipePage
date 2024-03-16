@@ -1,0 +1,182 @@
+body {
+    padding: 6em 1em;
+    margin: 0;
+    background-color: hsl(30, 54%, 90%);
+
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 0.7508802816901408rem + 1.5962441314553992vw, 2.1875rem);
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Young Serif';
+    font-weight: normal;
+}
+
+p,
+li,
+ol {
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: normal;
+    color: gray
+}
+
+.ingredients li,
+.preparation-time li,
+.instructions li {
+    padding-left: 1em;
+}
+
+.description p {
+    line-height: 1.5;
+}
+
+.preparation-time h4 {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.ingredients,
+.instructions {
+    border-bottom: 1px solid lightgray;
+
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 0 1em;
+    padding-bottom: 0.5em;
+}
+
+ul li {
+    line-height: 2;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.preparation-time h4 {
+    color: hsl(330, 75%, 46%);
+    font-family: outfit;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nutrition-values div p:nth-of-type(2) {
+    color: hsl(18, 37%, 39%);
+    font-weight: bold;
+
+}
+
+.nutrition-values div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15em 0 2em;
+}
+
+.nutrition-values div:nth-of-type(2) {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.nutrition-values div:nth-of-type(3) {
+    border-bottom: 1px solid lightgray;
+}
+
+
+section h3,
+ol {
+    color: hsl(18, 37%, 39%);
+}
+
+ol li {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+ol li::marker {
+    color: hsl(18, 37%, 39%);
+    font-weight: bold;
+
+}
+
+.container {
+    max-width: 730px;
+    padding: 2.625em;
+    border-radius: 15px;
+    background: white;
+
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .nutrition-values div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2em;
+    }
+
+
+}
+
+
+@media screen and (max-width:377px) {
+
+
+    .container {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .image img {
+        border-radius: 0;
+    }
+
+    .ingredients,
+    .instructions,
+    .nutrition,
+    .description h1,
+    .description p {
+        padding: 1em;
+    }
+
+    .preparation-time {
+        margin: 1em;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .description p {
+        padding-top: 0;
+    }
+
+    .instructions li {
+        margin-left: -1em;
+    }
+
+    body {
+        padding: 1em;
+    }
+}
